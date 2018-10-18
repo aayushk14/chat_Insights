@@ -1,0 +1,12 @@
+{
+  "MONGO_URL":"mongo-url",
+  "chatAnalytics_URL": "analytics-url",
+  "UseLDAPAccess":"false",
+  "LDAP":{
+    "url": "auth-url",
+    "baseDN": "<dc=domain>"
+  },
+  "public":{
+    "authcode": "auth-code"
+ , "recordsPerPage" : "10" }
+}

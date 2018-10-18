@@ -1,0 +1,417 @@
+/*! gridster.js - v0.6.10 - 2015-05-31
+* https://dsmorse.github.io/gridster.js/
+* Copyright (c) 2015 ducksboard; Licensed MIT */
+h1,
+h2,
+h3,
+p {
+  margin: 10px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.odd{
+
+}
+
+.demo {
+  margin: 3em 0;
+  padding: 7.5em 0 5.5em;
+  background: #26941f;
+}
+.demo:hover .gridster {
+  margin: 0 auto;
+  opacity: .8;
+  -webkit-transition: opacity .6s;
+  -moz-transition: opacity .6s;
+  -o-transition: opacity .6s;
+  -ms-transition: opacity .6s;
+  transition: opacity .6s;
+}
+.content {
+  color: white;
+}
+
+.gridster{
+  background-color: black;
+  width: 1460px !important;
+  margin: auto;
+  margin-top: 3.5%;
+  min-height: 1350px;
+}
+
+.gridster .gs-w {
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.gridster .player {
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background: #BBB;
+}
+.gridster .gs-w.try {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 37px -169px;
+}
+.gridster .preview-holder {
+  border: none !important;
+  border-radius: 0 !important;
+  background: red !important;
+}
+#gridster_UL {
+  /*background-color: #EFEFEF;*/
+    list-style-type: none;
+  height: 625px !important;
+  width: 1230px !important;
+}
+.gridster_LI {
+  font-size: 14px;
+  text-align: center;
+  line-height: 100%;
+   list-style: none;
+  font-weight: bold;
+}
+
+.gridster-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.controls {
+  margin-bottom: 20px;
+}
+
+.arc path {
+  stroke: lightyellow;
+}
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  width: 175px;
+}
+.legend-items{
+ text-transform: uppercase;
+}
+
+.total{
+  font-size: 18px;
+  padding-top: 35px;
+}
+
+#analyticalTable1 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;  
+}
+
+#analyticalTable{
+   font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.scroll {
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -10px;
+}
+
+
+
+td{
+    border: 1px solid #dddddd !important;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+    font-family: serif !important;
+    font-weight: normal !important;
+}
+
+th{
+   border: 1px solid #fff;
+   text-align: left;
+    padding: 8px;
+    font-weight: 600px !important;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.innerTableTd{
+  /*border: 2px solid #dddddd !important;*/
+  border: 0px !important;
+  border-left: 0px !important;
+  padding-left:10px;
+  width: .1%;
+  background-color: #fff !important;
+  
+}
+
+.innerTableTh{
+  /*border: 2px solid #dddddd !important;*/
+  border: 0px !important;
+  border-bottom: 0px !important;
+  padding-left:10px;
+  width: 40%;
+  background-color: #fff !important;
+  cursor: default !important;
+}
+
+#innerTable{
+  /*border: 2px solid #dddddd !important;*/
+  border: 0px !important;
+}
+
+.info-box-icon{
+  height: 135px !important;
+  width: 170px !important;
+  padding-top: 25px !important;
+}
+.info-box-icon1{
+  height: 135px !important;
+  width: 170px !important;
+  /*padding-top: 25px !important;*/
+}
+.count{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 4%;
+}
+
+.axis { font: 14px sans-serif; }
+
+.line {
+  fill: none !important;
+  stroke: steelblue !important;
+  stroke-width: 2px !important;
+}
+
+ .axis path,
+  .axis line{
+    fill: none;
+    stroke: black;
+  }
+  
+   .tick text{
+    font-size: 12px;
+  }
+
+  .tick line{
+    opacity: 0.2;
+  }
+  
+div.tooltip {	
+    position: relative;			
+    text-align: center;			
+    width: 40px;					
+    height: 28px;					
+    padding: 7px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue !important;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+	.axis {
+	  font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+ 
+   .abc:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    margin-left: 13px;
+    float: right;
+  }
+  /* Icon when the collapsible content is hidden */
+  .abc.collapsed:after {
+    content: "\e080";
+  }
+  .abc{
+    text-decoration: none;
+    margin-left: .7%;
+  }
+  .abc:focus{
+    text-decoration: none;
+  }
+  .abc:visited{
+    text-decoration: none;
+  }
+
+  .abc:hover{
+    text-decoration: none;
+  }
+  
+  .time button {
+    background-color: darkcyan; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin-top: 2%;
+}
+
+/* Clear floats (clearfix hack) */
+.time:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.time button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.time button:hover {
+    background-color: grey;
+}
+
+
+td.details-control {
+    background: url('../public/images/wipro_logo.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../public/images/minus.png') no-repeat center center;
+}
+
+.state-open td{
+  background-color: darkcyan !important;
+  color: #fff !important;
+}
+
+.state-open a{
+  color: #fff !important;
+}
+
+#day, #month, #week, #view, #dateSubmit{
+  cursor: pointer !important;
+}
+
+#duration{
+  width: 200px;
+  height: 38px;
+  padding: 5px;
+  margin-top: 2%;
+  margin-left: 25%;
+  font-weight: normal;
+}
+
+.time{
+  width: 100%;
+  margin-left: 3%;
+}
+
+/*#sync{
+   margin-right: 10px;
+   background-color: darkcyan !important;
+   border: 1px solid black;
+}*/
+
+#title{
+  text-align: center;
+  color: #fff;
+}
+
+.lastUpdateHeader{
+ float: right !important;
+  
+}
+#lastUpdate{
+ font-size: 14px;
+ margin-right: 5px;
+ /*color: #fff !important;*/
+}
+
+.daily{
+  margin-left: 5%;
+}
+
+#usageStats{
+  margin-top: -4%;
+  /*border: 1px solid #249e55;*/
+}
+
+.usageCount{
+  font-size: 23px;
+}
+ 
+ #note{
+   
+ }
+ 
+ .table > tbody > tr > td{
+   width: 320px !important;
+    padding-left:10px !important;
+ }
+ 
+ .table > thead > tr > th{
+    width: 320px !important;
+    padding-left:10px !important;
+ }
+ 
+
+ 
+ #from, #to{
+   width: 33%;
+   height: 30px;
+   font-size: 14px !important;
+   padding: 8px !important;
+   font-weight: 400 !important;
+ }
+ 
+ #dateSubmit{
+   float: none !important;
+   padding: 4px;
+   margin-left: 1%;
+ }
+ 
+ .ui-datepicker-calendar tr{
+    background: darkcyan !important;
+    
+}
+
+ .ui-datepicker-calendar a{
+    color: #fff !important;
+ }
+ 
+ .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    color: transparent !important;
+    display: none !important;
+}
+
+#filter_intent{
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+#filter_action{
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+
+
+
+/*# sourceMappingURL=demos/assets/css/demo.css.map */

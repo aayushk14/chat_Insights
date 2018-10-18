@@ -1,0 +1,364 @@
+
+.affix {
+    position: fixed
+}
+@-ms-viewport {
+   width: device-width
+}
+.visible-lg,
+.visible-md,
+.visible-sm,
+.visible-xs {
+    display: none!important
+}
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block {
+    display: none!important
+}
+@media (max-width: 767px) {
+    .visible-xs {
+        display: block!important
+    }
+    table.visible-xs {
+        display: table!important
+    }
+    tr.visible-xs {
+        display: table-row!important
+    }
+    td.visible-xs,
+    th.visible-xs {
+        display: table-cell!important
+    }
+}
+@media (max-width: 767px) {
+    .visible-xs-block {
+        display: block!important
+    }
+}
+@media (max-width: 767px) {
+    .visible-xs-inline {
+        display: inline!important
+    }
+}
+@media (max-width: 767px) {
+    .visible-xs-inline-block {
+        display: inline-block!important
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm {
+        display: block!important
+    }
+    table.visible-sm {
+        display: table!important
+    }
+    tr.visible-sm {
+        display: table-row!important
+    }
+    td.visible-sm,
+    th.visible-sm {
+        display: table-cell!important
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm-block {
+        display: block!important
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm-inline {
+        display: inline!important
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm-inline-block {
+        display: inline-block!important
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md {
+        display: block!important
+    }
+    table.visible-md {
+        display: table!important
+    }
+    tr.visible-md {
+        display: table-row!important
+    }
+    td.visible-md,
+    th.visible-md {
+        display: table-cell!important
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md-block {
+        display: block!important
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md-inline {
+        display: inline!important
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md-inline-block {
+        display: inline-block!important
+    }
+}
+@media (min-width: 1200px) {
+    .visible-lg {
+        display: block!important
+    }
+    table.visible-lg {
+        display: table!important
+    }
+    tr.visible-lg {
+        display: table-row!important
+    }
+    td.visible-lg,
+    th.visible-lg {
+        display: table-cell!important
+    }
+}
+@media (min-width: 1200px) {
+    .visible-lg-block {
+        display: block!important
+    }
+}
+@media (min-width: 1200px) {
+    .visible-lg-inline {
+        display: inline!important
+    }
+}
+@media (min-width: 1200px) {
+    .visible-lg-inline-block {
+        display: inline-block!important
+    }
+}
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none!important
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none!important
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none!important
+    }
+}
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none!important
+    }
+}
+.visible-print {
+    display: none!important
+}
+@media print {
+    .visible-print {
+        display: block!important
+    }
+    table.visible-print {
+        display: table!important
+    }
+    tr.visible-print {
+        display: table-row!important
+    }
+    td.visible-print,
+    th.visible-print {
+        display: table-cell!important
+    }
+}
+.visible-print-block {
+    display: none!important
+}
+@media print {
+    .visible-print-block {
+        display: block!important
+    }
+}
+.visible-print-inline {
+    display: none!important
+}
+@media print {
+    .visible-print-inline {
+        display: inline!important
+    }
+}
+.visible-print-inline-block {
+    display: none!important
+}
+@media print {
+    .visible-print-inline-block {
+        display: inline-block!important
+    }
+}
+@media print {
+    .hidden-print {
+        display: none!important
+    }
+}
+
+/* CSS Document */
+/*body{font-family:Verdana, Geneva, sans-serif;}
+/*............... Header..................*/
+
+.loginheader {height:110px;}
+.loginheader > aside{float:left; width:25%; background-color:#fff; height:100%;}
+.loginheader > aside img{ margin: 4.8% auto;}
+.loginheader > section{float:left; width:50%; height:100%;}
+/*............... Header End..................*/
+
+/*............... Middle Article Section..................*/
+#formContaner{width: 51%; margin: auto;  height: 416px;}
+.shadowLeft{width: 6%; float: left; margin: 6% 0 0}
+.shadowRight{width: 5%; float: left; margin: 8% 0 0;}
+/*............... Form Header..................
+.loginHeader{text-align: center;  border-bottom: 2px #ccc dotted;width: 71%; margin: auto;}*/
+
+.loginHeader h1{color: bisque;}
+.loginHeader h1 img{ margin:auto;}
+.loginHeader h4{color: #ccc;}
+/*............... Form Header End..................*/
+
+/*............... Form Input..................*/
+#formMidlleSection{float:left; width: 89%; background-color: #fff; height: 100%;}
+.formInputs {width: 73%;margin: auto;}
+.input-group-login {margin:3% 0;}
+.input-group-addon-login {
+    padding: 6px 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff !important;
+    text-align: center;
+    background-color: #ed2930 !important;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-control-login {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px 8px 8px 0px!important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.btnLogin {
+    display: inline-block;
+    padding: 6px 23px !important;
+    margin-bottom: 0;
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px #adadad solid;
+    border-radius: 4px;
+}
+
+
+
+/*............... Form Input End..................*/
+
+/*............... Form Footer..................*/
+.shadowBox{background-color: #fff; -webkit-box-shadow: 1px 1px 8px 3px rgba(51, 50, 50, 0.67);-moz-box-shadow: 1px 1px 8px 3px rgba(51, 50, 50, 0.67); box-shadow:1px 1px 8px 3px rgba(51, 50, 50, 0.67);}
+.sectionlogin p{color: #b9b3b3; text-align: center;  margin: 4% 0 0% 2%; font-size: 12px;}
+.sectionlogin p a{ cursor:pointer; color: #5fc5b6; text-decoration: underline;}
+.sectionlogin p i{margin: 0 8px 0 0;}
+/*............... Form Footer End..................*/
+
+.bg{ background-image:url(/packages/bos_core/public/img/1.jpg); background-size:cover; width:100%; color:#fff; height:auto;}
+h3{ color:#b9b3b3 !important;}
+/*............... Middle Article Section End..................*/
+
+footer
+{
+    height:90px;
+    width:70%;
+    text-align:center;
+    margin: 3% 0 0;
+    color:#CCC;
+    font-size:11.5px;
+    margin-top:20px;
+    line-height:14px;
+
+}
+
+@media screen and (max-width: 768px) {
+    #formContaner{width: 100%; height: 429px;}
+    .formInputs {width: 87%; margin: auto;}
+     .margin{margin: 3% auto;}
+    }
+
+@media (max-device-width: 480px)  {
+       #formContaner{width: 100%; height: 448px;}
+      .margin{margin: 5% auto;}
+        header > aside img {margin: 33.8% auto;}
+      .shadowRight {width: 5%;float: left; margin: 44% 0 0;}
+      .shadowLeft {width: 5%; float: left; margin: 42% 0 0;}
+      #formMidlleSection {float: left; width: 90%; background-color: #fff;  height: 100%;}
+    }
+
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.glyphicon-cog:before {
+    content: "\e019"
+}
+
+.logo-brand{
+    border-right:1px solid black;
+    padding-right:20px;   
+    height:40px;
+}
+
+.logo-wipro{
+    padding-right:20px;   
+    height:40px;
+}
+/*# sourceMappingURL=bootstrap.min.css.map */

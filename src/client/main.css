@@ -1,0 +1,484 @@
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat > li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat > li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat > li.right .chat-body
+{
+    margin-right: 60px;
+}
+.chat > li .chat-body p
+{
+    margin: 0;
+    color: #fff;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 120px;
+    padding-bottom:60px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+
+body{height:100%;
+   width:100%;
+/*   background-image:url('images/background.jpg');*/
+   /*your background image*/
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
+   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+   /*css hack for ie*/
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.png',sizingMethod='scale')";
+}
+/* CSS declarations go here */
+
+/* Login page */
+
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=button] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+.login-help{
+  font-size: 12px;
+}
+
+.row{
+  width:100%;
+  /*height: 90vh;*/
+  overflow: hidden;
+  margin-left: 0px;
+  margin-right: 0px;
+  /*overflow-y: scroll;*/
+
+}
+.center {
+    margin: auto;
+    width: 35%;
+    margin-left: 12.5%;
+    margin-top:2.5%;
+}
+.panel-heading:hover{
+  cursor:move;
+}
+
+.bot-text {
+    border-radius: 10px;
+    /*background-color: #ccffdd; */
+    background-color: #00529B;
+    color: #fff;
+    padding: 10px;
+    /*border: 1px solid #ccffdd; */
+}
+
+.ui-resizable-handle{
+    position: absolute;
+    font-size: 0.1px;
+    z-index: 99999;
+    display: block;
+}
+.ui-resizable-e{
+  cursor: e-resize;
+  width: 7px;
+  height: 100%;
+  right: -5px;
+  top: 0px;
+}
+.ui-resizable-s{
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0px;
+}
+.ui-resizable{
+  position: relative;
+}
+.ui-resizable-se{
+  cursor: se-resize;
+width: 12px;
+height: 12px;
+right: 1px;
+bottom: 1px;
+}
+
+.ui-icon-gripsmall-diagonal-se{
+  background-position: 64px 224px
+}
+
+.user-text {
+  border-radius: 10px;
+  background: #00ace6;
+  padding: 10px;
+}
+
+.btn-round{
+ border-radius: 12px;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-top: 5px solid transparent;
+  border-bottom: 13px solid transparent;
+ /* border-right:10px solid #ccffdd; */
+  border-right:10px solid #00529B;
+  margin-top: 10px;
+  position: relative;
+}
+
+.arrow-right {
+  /*margin-bottom: -8%;*/
+  margin-right: -0.6%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-top: 5px solid transparent;
+  border-bottom: 13px solid transparent;
+  margin-top: 10px;
+  position: relative;
+  border-left: 8px solid #00ace6;
+}
+
+.glyphicon-ring {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid white;
+  color: white;
+  display: inline-table;
+  text-align: center;
+}
+/**CSS FOR ICON WITH NO BACKGROUND COLOR**/
+
+.glyphicon-ring .glyphicon-bordered {
+  font-size: 20px;
+  vertical-align: middle;
+  display: table-cell;
+}
+div > .btn-round{
+  margin-left:3px;
+  text-transform: capitalize;
+}
+
+.dont-break-out {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+ /* word-break: break-all; */
+  /* Instead use this non-standard one: */
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+
+/* http://docs.jquery.com/UI/Autocomplete#theming*/
+.ui-autocomplete {
+   position: absolute; 
+   cursor: default; 
+   background:#fff; 
+   /*background:#00ace6; *
+   color:#fff; */
+   color:#000;
+   height:72px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding-right: 20px;
+   border-left:1px solid #00ace6;
+   border-right:1px solid #00ace6;
+   border-bottom:1px solid #00ace6;
+}   
+/* workarounds */
+
+.ui-menu {
+    list-style:none;
+    padding: 2px;
+    margin: 0;
+    display:block;
+    float: left;
+}
+.ui-menu .ui-menu {
+    margin-top: -3px;   
+}
+.ui-menu .ui-menu-item {
+    margin:0;
+    zoom: 1;
+    float: left;
+    clear: left;
+    width:100%;
+
+}
+.ui-menu .ui-menu-item a {
+    text-decoration:none;
+    display:block;
+    padding:.2em .4em;
+    line-height:1.5;
+    zoom:1;
+    color:#000;
+}
+.ui-menu .ui-menu-item:hover{
+  background-color:#00529B;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+    margin: -1px;
+}
+
+.hide_background_cal{
+  background-color:#fff;
+  border:none;
+}
+.btn-custom{
+  background: #00ace6;
+  color:#fff;
+}
+
+#chatbox table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    margin-bottom:10px;
+}
+
+#chatbox th {
+    border: 1px solid #fff;
+    padding: 8px;
+    background-color:#00ace6;
+}
+
+#tzpicker label{
+  font-size:smaller;
+}
+
+#chatbox table, td {
+    border: 1px solid #fff;
+    padding: 8px;    
+ }
+
+#tzpicker table, td {
+    border: 1px solid #fff;   
+ }
+#tzpicker th {
+    border: 1px solid #fff;
+    background-color:#00ace6;   
+ }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   /* IE10+ CSS styles go here */
+   #ieHack{
+    height:40px;
+   }
+}
+/* Three dots animation start */
+.loading {
+  margin-right:5px;
+}
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 1200ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+  font-size: 150%;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 25px;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 25px;    
+  }
+}
+
+/*tr.group:hover {
+    background-color: #ddd !important;
+}*/
+
+table.dataTable tr.odd{
+    background-color: #fff !important;
+}
+
+.paginate_button{
+    margin-right: 5px !important;
+    border: 1px solid blue !important;
+    padding: 5px !important; 
+    
+}
+
+.paginate_button:hover{
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+div.dataTables_paginate{
+   margin-top: 7px;
+   margin-bottom: 10px;
+}
+
+.current{
+   background-color: #00a2e0 !important;
+   color: #fff !important;
+}
+.previous, .next{
+   background-color: #00a2e0 !important;
+   color: #fff !important;
+}
+
+  .slice text {
+    font-family: Droid Sans;
+  }
+  
+
+       
+       
+       
+       
+       
+       
+       
+     
+
+.arc path {
+  stroke: #fff;
+}
+
+.legend rect {
+  fill:white;
+  stroke:black;
+}
+  
+/* Three dots animation end */
